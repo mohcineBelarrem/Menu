@@ -1,0 +1,14 @@
+[
+      {
+         "name":"Prunes Tagine",
+         "price":14.99,
+         "menuCategory":"food",
+         "ordersCount":99,
+         "imageName":"prunesTagine",
+         "ingredients":[
+            "lamb",
+            "friedAlmonds",
+            "driedPrunes"
+         ]
+      }
+]

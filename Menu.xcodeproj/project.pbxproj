@@ -14,6 +14,9 @@
 		B43886742B35A206007D1D52 /* MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43886732B35A206007D1D52 /* MenuTests.swift */; };
 		B438867E2B35A206007D1D52 /* MenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438867D2B35A206007D1D52 /* MenuUITests.swift */; };
 		B43886802B35A206007D1D52 /* MenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438867F2B35A206007D1D52 /* MenuUITestsLaunchTests.swift */; };
+		B438868D2B35A429007D1D52 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438868C2B35A429007D1D52 /* MenuItem.swift */; };
+		B43886902B35A6BF007D1D52 /* MenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438868F2B35A6BF007D1D52 /* MenuItemModel.swift */; };
+		B43886922B35A6DB007D1D52 /* menuItems.json in Resources */ = {isa = PBXBuildFile; fileRef = B43886912B35A6DB007D1D52 /* menuItems.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		B43886792B35A206007D1D52 /* MenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B438867D2B35A206007D1D52 /* MenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuUITests.swift; sourceTree = "<group>"; };
 		B438867F2B35A206007D1D52 /* MenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B438868C2B35A429007D1D52 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		B438868F2B35A6BF007D1D52 /* MenuItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemModel.swift; sourceTree = "<group>"; };
+		B43886912B35A6DB007D1D52 /* menuItems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menuItems.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		B43886612B35A205007D1D52 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				B438868E2B35A68E007D1D52 /* Model */,
 				B43886622B35A205007D1D52 /* MenuApp.swift */,
 				B43886642B35A205007D1D52 /* ContentView.swift */,
 				B43886662B35A206007D1D52 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				B438867F2B35A206007D1D52 /* MenuUITestsLaunchTests.swift */,
 			);
 			path = MenuUITests;
+			sourceTree = "<group>";
+		};
+		B438868E2B35A68E007D1D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B438868C2B35A429007D1D52 /* MenuItem.swift */,
+				B438868F2B35A6BF007D1D52 /* MenuItemModel.swift */,
+				B43886912B35A6DB007D1D52 /* menuItems.json */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +250,7 @@
 			files = (
 				B438866A2B35A206007D1D52 /* Preview Assets.xcassets in Resources */,
 				B43886672B35A206007D1D52 /* Assets.xcassets in Resources */,
+				B43886922B35A6DB007D1D52 /* menuItems.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B438868D2B35A429007D1D52 /* MenuItem.swift in Sources */,
 				B43886652B35A205007D1D52 /* ContentView.swift in Sources */,
 				B43886632B35A205007D1D52 /* MenuApp.swift in Sources */,
+				B43886902B35A6BF007D1D52 /* MenuItemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
