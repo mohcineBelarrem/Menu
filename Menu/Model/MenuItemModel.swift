@@ -9,7 +9,12 @@ import Foundation
 
 
 class MenuModel: ObservableObject {
-    @Published var menuItems: [MenuItem]
+    @Published private var menuItems: [MenuItem]
+    
+    var availableMenuCatergories: [MenuCategory] {
+        //TODO: Apply filters
+        return MenuCategory.allCases
+    }
     
     init() {
         guard let bundlePath = Bundle.main.path(forResource: "menuItems", ofType: "json"),
@@ -20,9 +25,10 @@ class MenuModel: ObservableObject {
         }
         
         self.menuItems = menuItemsArray
-        print(self.menuItems)
     }
     
-    
-    
+    func items(for category: MenuCategory) -> [MenuItem] {
+        //TODO: Apply Sorting Mechanism
+        return menuItems.filter { $0.menuCategory == category }
+    }
 }
