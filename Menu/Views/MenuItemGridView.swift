@@ -11,7 +11,7 @@ struct MenuItemGridView: View {
     private var item: MenuItem
     var body: some View {
         VStack(alignment: .leading) {
-            Image(item.imageName ?? "")
+            Image(item.imageName)
                 .resizable()
                 .aspectRatio(1.0, contentMode: .fit)
                 .cornerRadius(25)
@@ -20,9 +20,17 @@ struct MenuItemGridView: View {
                 .foregroundColor(.black)
                 .font(.custom("Futura", size: 14))
                 .fontWeight(.regular)
-            Spacer()
+                .lineLimit(1)
+            HStack() {
+                Text(item.price.withDollars)
+                    .padding(5)
+                    .background(Color.green)
+                    .cornerRadius(20)
+                    .font(.custom("Futura", size:12))
+                    .foregroundColor(.white)
+                    .fontWeight(.semibold)
+            }
         }
-        .frame(height: 200)
         .padding([.top,.trailing], 10)
     }
     

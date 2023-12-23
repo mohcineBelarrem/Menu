@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct MenuItemsView: View {
-    @ObservedObject var model = MenuModel()
+    @StateObject private var viewModel = MenuViewModel()
+    @State var showingMenuOptions = false
     
     private var columns: [GridItem] = [
         GridItem(.flexible(), spacing: 16),
-        GridItem(.flexible(), spacing: 16),
+        //GridItem(.flexible(), spacing: 16),
         GridItem(.flexible(), spacing: 16)
     ]
     
@@ -28,11 +29,13 @@ struct MenuItemsView: View {
                             alignment: .leading,
                             spacing: 16
                         ) {
-                            ForEach(model.availableMenuCatergories) { category in
-                                Section(header: Text(category.userFriendlyName).font(.largeTitle)) {
-                                    //TODO: Beautify title
-                                    ForEach(model.items(for: category)) { menuItem in
-                                        NavigationLink(destination: Text(menuItem.name)) {
+                            ForEach(viewModel.availableMenuCatergories) { category in
+                                Section(header: Text(category.userFriendlyName)
+                                    .font(.custom("Futura", size: 25))
+                                    .fontWeight(.ultraLight)
+                                ) {
+                                    ForEach(viewModel.items(for: category)) { menuItem in
+                                        NavigationLink(destination: MenuItemDetailView(item: menuItem)) {
                                             MenuItemGridView(item: menuItem)
                                         }
                                     }
@@ -44,7 +47,7 @@ struct MenuItemsView: View {
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         Button {
-                            //TODO: Implement me
+                            self.showingMenuOptions = true
                         } label: {
                             Image(systemName: "slider.horizontal.3")
                         }
@@ -53,7 +56,13 @@ struct MenuItemsView: View {
                 }
             }
         }
+        .sheet(isPresented: $showingMenuOptions, onDismiss: {
+            showingMenuOptions = false
+        }) {
+            MenuOptionsView(isPresented: $showingMenuOptions)
+        }
         .foregroundColor(.black)
+        .environmentObject(viewModel)
     }
 }
 
@@ -64,8 +73,3 @@ struct MenuItemsView_Previews: PreviewProvider {
 }
 
 
-extension Color {
-    static var littleOrange: Color {
-        return .init(red: 247.0/255.0, green: 199.0/255.0, blue: 121.0/255.0)
-    }
-}

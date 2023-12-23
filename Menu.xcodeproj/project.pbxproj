@@ -11,7 +11,7 @@
 		B43886652B35A205007D1D52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43886642B35A205007D1D52 /* ContentView.swift */; };
 		B43886672B35A206007D1D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B43886662B35A206007D1D52 /* Assets.xcassets */; };
 		B438866A2B35A206007D1D52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B43886692B35A206007D1D52 /* Preview Assets.xcassets */; };
-		B43886742B35A206007D1D52 /* MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43886732B35A206007D1D52 /* MenuTests.swift */; };
+		B43886742B35A206007D1D52 /* MenuViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43886732B35A206007D1D52 /* MenuViewModelTests.swift */; };
 		B438867E2B35A206007D1D52 /* MenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438867D2B35A206007D1D52 /* MenuUITests.swift */; };
 		B43886802B35A206007D1D52 /* MenuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438867F2B35A206007D1D52 /* MenuUITestsLaunchTests.swift */; };
 		B438868D2B35A429007D1D52 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438868C2B35A429007D1D52 /* MenuItem.swift */; };
@@ -20,6 +20,12 @@
 		B43886952B360B51007D1D52 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43886942B360B51007D1D52 /* MenuItemsView.swift */; };
 		B43886972B362311007D1D52 /* MenuItemGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43886962B362311007D1D52 /* MenuItemGridView.swift */; };
 		B43886992B36D954007D1D52 /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43886982B36D954007D1D52 /* GradientBackgroundView.swift */; };
+		B4453D852B37685D002FFFD6 /* MenuOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4453D842B37685D002FFFD6 /* MenuOptionsView.swift */; };
+		B4453D872B377A6A002FFFD6 /* MenuItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4453D862B377A6A002FFFD6 /* MenuItemDetailView.swift */; };
+		B4453D892B37809C002FFFD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4453D882B37809C002FFFD6 /* Extensions.swift */; };
+		B4453D8B2B378ECD002FFFD6 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4453D8A2B378ECD002FFFD6 /* ExtensionsTests.swift */; };
+		B4453D8D2B379164002FFFD6 /* MenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4453D8C2B379164002FFFD6 /* MenuOptionView.swift */; };
+		B4453D902B37A395002FFFD6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4453D8F2B37A395002FFFD6 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +52,7 @@
 		B43886662B35A206007D1D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B43886692B35A206007D1D52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B438866F2B35A206007D1D52 /* MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B43886732B35A206007D1D52 /* MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTests.swift; sourceTree = "<group>"; };
+		B43886732B35A206007D1D52 /* MenuViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModelTests.swift; sourceTree = "<group>"; };
 		B43886792B35A206007D1D52 /* MenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B438867D2B35A206007D1D52 /* MenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuUITests.swift; sourceTree = "<group>"; };
 		B438867F2B35A206007D1D52 /* MenuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -56,6 +62,12 @@
 		B43886942B360B51007D1D52 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
 		B43886962B362311007D1D52 /* MenuItemGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGridView.swift; sourceTree = "<group>"; };
 		B43886982B36D954007D1D52 /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
+		B4453D842B37685D002FFFD6 /* MenuOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsView.swift; sourceTree = "<group>"; };
+		B4453D862B377A6A002FFFD6 /* MenuItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailView.swift; sourceTree = "<group>"; };
+		B4453D882B37809C002FFFD6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B4453D8A2B378ECD002FFFD6 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
+		B4453D8C2B379164002FFFD6 /* MenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionView.swift; sourceTree = "<group>"; };
+		B4453D8F2B37A395002FFFD6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,7 @@
 				B43886932B360B2E007D1D52 /* Views */,
 				B438868E2B35A68E007D1D52 /* Model */,
 				B43886622B35A205007D1D52 /* MenuApp.swift */,
+				B4453D882B37809C002FFFD6 /* Extensions.swift */,
 				B43886662B35A206007D1D52 /* Assets.xcassets */,
 				B43886682B35A206007D1D52 /* Preview Content */,
 			);
@@ -126,7 +139,8 @@
 		B43886722B35A206007D1D52 /* MenuTests */ = {
 			isa = PBXGroup;
 			children = (
-				B43886732B35A206007D1D52 /* MenuTests.swift */,
+				B43886732B35A206007D1D52 /* MenuViewModelTests.swift */,
+				B4453D8A2B378ECD002FFFD6 /* ExtensionsTests.swift */,
 			);
 			path = MenuTests;
 			sourceTree = "<group>";
@@ -155,10 +169,22 @@
 			children = (
 				B43886642B35A205007D1D52 /* ContentView.swift */,
 				B43886942B360B51007D1D52 /* MenuItemsView.swift */,
-				B43886982B36D954007D1D52 /* GradientBackgroundView.swift */,
+				B4453D8E2B379BD3002FFFD6 /* MenuOption */,
+				B4453D862B377A6A002FFFD6 /* MenuItemDetailView.swift */,
 				B43886962B362311007D1D52 /* MenuItemGridView.swift */,
+				B43886982B36D954007D1D52 /* GradientBackgroundView.swift */,
+				B4453D8F2B37A395002FFFD6 /* WelcomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B4453D8E2B379BD3002FFFD6 /* MenuOption */ = {
+			isa = PBXGroup;
+			children = (
+				B4453D842B37685D002FFFD6 /* MenuOptionsView.swift */,
+				B4453D8C2B379164002FFFD6 /* MenuOptionView.swift */,
+			);
+			path = MenuOption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,9 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B438868D2B35A429007D1D52 /* MenuItem.swift in Sources */,
+				B4453D8D2B379164002FFFD6 /* MenuOptionView.swift in Sources */,
 				B43886652B35A205007D1D52 /* ContentView.swift in Sources */,
+				B4453D872B377A6A002FFFD6 /* MenuItemDetailView.swift in Sources */,
 				B43886972B362311007D1D52 /* MenuItemGridView.swift in Sources */,
 				B43886992B36D954007D1D52 /* GradientBackgroundView.swift in Sources */,
+				B4453D892B37809C002FFFD6 /* Extensions.swift in Sources */,
+				B4453D902B37A395002FFFD6 /* WelcomeView.swift in Sources */,
+				B4453D852B37685D002FFFD6 /* MenuOptionsView.swift in Sources */,
 				B43886632B35A205007D1D52 /* MenuApp.swift in Sources */,
 				B43886952B360B51007D1D52 /* MenuItemsView.swift in Sources */,
 				B43886902B35A6BF007D1D52 /* MenuItemModel.swift in Sources */,
@@ -306,7 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B43886742B35A206007D1D52 /* MenuTests.swift in Sources */,
+				B43886742B35A206007D1D52 /* MenuViewModelTests.swift in Sources */,
+				B4453D8B2B378ECD002FFFD6 /* ExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +496,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +525,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.littleOrange.MenuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,7 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.littleOrange.MenuTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,6 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.littleOrange.MenuUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +602,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.littleOrange.MenuUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

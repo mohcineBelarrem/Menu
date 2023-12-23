@@ -19,14 +19,3 @@ struct GradientBackgroundView_Previews: PreviewProvider {
         GradientBackgroundView()
     }
 }
-
-
-extension Color {
-    static var gray1: Color {
-        return .init(red: 237.0/255.0, green: 234.0/255.0, blue: 233.0/255.0)
-    }
-    static var gray2: Color {
-        return .init(red: 246.0/255.0, green: 243.0/255.0, blue: 242.0/255.0)
-    }
-}
-

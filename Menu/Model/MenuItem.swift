@@ -21,7 +21,7 @@ enum MenuCategory: String, CaseIterable, Identifiable {
     }
 }
 
-enum Ingredient: String {
+enum Ingredient: String, Identifiable {
     case tomato
     case lamb
     case driedPrunes
@@ -56,6 +56,10 @@ enum Ingredient: String {
     case butterMilk
     case sesameSeeds
     
+    var id: String {
+        return self.rawValue
+    }
+    
     var userFriendlyName: String {
         switch self {
         case .driedPrunes:
@@ -85,7 +89,7 @@ protocol MenuItemProtocol: Identifiable, Decodable {
     var price: Double { get }
     var name: String { get } // name is better than title.
     var menuCategory: MenuCategory { get }
-    var imageName: String? { get }
+    var imageName: String { get }
     var ordersCount: Int { get set }
     var ingredients: [Ingredient] { get set }
 }
@@ -96,7 +100,7 @@ struct MenuItem: MenuItemProtocol {
     let price: Double
     let name: String
     let menuCategory: MenuCategory
-    let imageName: String?
+    let imageName: String
     var ordersCount: Int
     var ingredients: [Ingredient]
 }
@@ -119,7 +123,7 @@ extension MenuItem {
         self.id = UUID().uuidString
         self.price = try values.decode(Double.self, forKey: .price)
         self.name = try values.decode(String.self, forKey: .name)
-        self.imageName = try? values.decode(String.self, forKey: .imageName)
+        self.imageName = try values.decode(String.self, forKey: .imageName)
         self.ordersCount = try values.decode(Int.self, forKey: .ordersCount)
         
         let stringMenuCategory = try values.decode(String.self, forKey: .menuCategory)

@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct MenuApp: App {
+    @AppStorage("didLaunchBefore") var didLaunchBefore: Bool = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if didLaunchBefore {
+                ContentView()
+            } else {
+                WelcomeView()
+            }
         }
     }
 }
