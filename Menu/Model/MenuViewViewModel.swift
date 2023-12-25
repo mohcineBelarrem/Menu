@@ -1,5 +1,5 @@
 //
-//  MenuItemModel.swift
+//  MenuViewViewModel.swift
 //  Menu
 //
 //  Created by Mohcine on 22/12/2023.
@@ -13,7 +13,7 @@ enum SortingType {
     case byPrice
 }
 
-class MenuViewModel: ObservableObject {
+class MenuViewViewModel: ObservableObject {
     @Published private var menuItems: [MenuItem]
     @Published private var excludedCategories: [MenuCategory] = []
     @Published private var sortingType: SortingType = .alphabetical
@@ -59,7 +59,7 @@ class MenuViewModel: ObservableObject {
         
         switch sortingType {
         case .alphabetical:
-            sortingClosure = { (item1, item2) in return item1.name < item2.name }
+            sortingClosure = { (item1, item2) in return item1.title < item2.title }
         case .byPopularity:
             sortingClosure = { (item1, item2) in return item1.ordersCount > item2.ordersCount }
         case .byPrice:

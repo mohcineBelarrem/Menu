@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MenuItemsView: View {
-    @StateObject private var viewModel = MenuViewModel()
+    @StateObject private var viewModel = MenuViewViewModel()
     @State var showingMenuOptions = false
     
     private var columns: [GridItem] = [
@@ -35,7 +35,7 @@ struct MenuItemsView: View {
                                     .fontWeight(.ultraLight)
                                 ) {
                                     ForEach(viewModel.items(for: category)) { menuItem in
-                                        NavigationLink(destination: MenuItemDetailView(item: menuItem)) {
+                                        NavigationLink(destination: MenuItemDetailsView(item: menuItem)) {
                                             MenuItemGridView(item: menuItem)
                                         }
                                     }
@@ -59,7 +59,7 @@ struct MenuItemsView: View {
         .sheet(isPresented: $showingMenuOptions, onDismiss: {
             showingMenuOptions = false
         }) {
-            MenuOptionsView(isPresented: $showingMenuOptions)
+            MenuItemsOptionView(isPresented: $showingMenuOptions)
         }
         .foregroundColor(.black)
         .environmentObject(viewModel)

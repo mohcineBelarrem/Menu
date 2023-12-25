@@ -15,7 +15,7 @@ struct MenuItemGridView: View {
                 .resizable()
                 .aspectRatio(1.0, contentMode: .fit)
                 .cornerRadius(25)
-            Text(item.name)
+            Text(item.title)
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.black)
                 .font(.custom("Futura", size: 14))
@@ -41,6 +41,6 @@ struct MenuItemGridView: View {
 
 struct MenuItemGridView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItemGridView(item: .init(id: "12", price: 12.4, name: "Some Name", menuCategory: .dessert, imageName: "couscous", ordersCount: 12, ingredients: []))
+        MenuItemGridView(item: .init(id: "12", price: 12.4, title: "Some Name", menuCategory: .dessert, imageName: "couscous", ordersCount: 12, ingredients: []))
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuItemDetailView: View {
+struct MenuItemDetailsView: View {
     private var item: MenuItem
     var body: some View {
         NavigationView {
@@ -17,7 +17,7 @@ struct MenuItemDetailView: View {
                     .aspectRatio(contentMode: .fit)
                 VStack(alignment: .leading, spacing: 20) {
                     HStack(alignment: .bottom) {
-                        Text(item.name)
+                        Text(item.title)
                             .font(.custom("Futura", size: 20))
                             .fontWeight(.bold)
                         Spacer()
@@ -62,6 +62,6 @@ struct MenuItemDetailView: View {
 
 struct MenuItemDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItemDetailView(item: .init(id: "12", price: 12.4, name: "Some Name", menuCategory: .dessert, imageName: "couscous", ordersCount: 12, ingredients: [.semoulina,.almondsPaste]))
+        MenuItemDetailsView(item: .init(id: "12", price: 12.4, title: "Some Name", menuCategory: .dessert, imageName: "couscous", ordersCount: 12, ingredients: [.semoulina,.almondsPaste]))
     }
 }

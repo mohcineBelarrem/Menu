@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct MenuOptionsView: View {
+struct MenuItemsOptionView: View {
     @Binding var isPresented: Bool
-    @EnvironmentObject var viewModel: MenuViewModel
+    @EnvironmentObject var viewModel: MenuViewViewModel
     var body: some View {
         NavigationStack {
             List {
@@ -60,7 +60,7 @@ struct MenuOptionsView: View {
 
 struct MenuOptionsView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuOptionsView(isPresented: .constant(true))
-            .environmentObject(MenuViewModel())
+        MenuItemsOptionView(isPresented: .constant(true))
+            .environmentObject(MenuViewViewModel())
     }
 }

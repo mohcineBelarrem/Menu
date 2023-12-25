@@ -7,87 +7,10 @@
 
 import Foundation
 
-enum MenuCategory: String, CaseIterable, Identifiable {
-    case food
-    case drink
-    case dessert
-    
-    var id: String {
-        return self.rawValue
-    }
-    
-    var userFriendlyName: String {
-        return self.rawValue.capitalized
-    }
-}
-
-enum Ingredient: String, Identifiable {
-    case tomato
-    case lamb
-    case driedPrunes
-    case friedAlmonds
-    case orange
-    case safran
-    case sugar
-    case chicken
-    case chickpea
-    case potato
-    case honey
-    case orangeBlossomWater
-    case mint
-    case coffee
-    case greenTea
-    case semoulina
-    case courgette
-    case pumpkin
-    case eggplant
-    case weirdStuff
-    case water
-    case lemon
-    case almondsPaste
-    case pastillaSheet
-    case fish
-    case onions
-    case vermicelli
-    case ice
-    case strawberry
-    case milk
-    case chocolate
-    case butterMilk
-    case sesameSeeds
-    
-    var id: String {
-        return self.rawValue
-    }
-    
-    var userFriendlyName: String {
-        switch self {
-        case .driedPrunes:
-            return "Dried Prunes"
-        case .friedAlmonds:
-            return "Fried Almonds"
-        case .orangeBlossomWater:
-            return "Orange Blossom Water"
-        case .weirdStuff:
-            return "Preservatifs and stuff like that"
-        case .almondsPaste:
-            return "Alomnds Paste"
-        case .pastillaSheet:
-            return "Pastilla sheet"
-        case .sesameSeeds:
-            return "Sesame seeds"
-        case .butterMilk:
-            return "Butter Milk"
-        default:
-            return self.rawValue.capitalized
-        }
-    }
-}
-
 protocol MenuItemProtocol: Identifiable, Decodable {
     var id: String { get }
     var price: Double { get }
-    var name: String { get } // name is better than title.
+    var title: String { get }
     var menuCategory: MenuCategory { get }
     var imageName: String { get }
     var ordersCount: Int { get set }
@@ -98,7 +21,7 @@ protocol MenuItemProtocol: Identifiable, Decodable {
 struct MenuItem: MenuItemProtocol {
     let id: String
     let price: Double
-    let name: String
+    let title: String
     let menuCategory: MenuCategory
     let imageName: String
     var ordersCount: Int
@@ -110,7 +33,7 @@ extension MenuItem {
     enum CodingKeys: String, CodingKey {
         case id
         case price
-        case name
+        case title
         case menuCategory
         case imageName
         case ordersCount
@@ -122,7 +45,7 @@ extension MenuItem {
         
         self.id = UUID().uuidString
         self.price = try values.decode(Double.self, forKey: .price)
-        self.name = try values.decode(String.self, forKey: .name)
+        self.title = try values.decode(String.self, forKey: .title)
         self.imageName = try values.decode(String.self, forKey: .imageName)
         self.ordersCount = try values.decode(Int.self, forKey: .ordersCount)
         

@@ -1,6 +1,6 @@
 [
    {
-      "name":"Jawhara",
+      "title":"Jawhara",
       "price":6.99,
       "menuCategory":"dessert",
       "ordersCount":103,
@@ -12,7 +12,7 @@
       ]
    },
    {
-      "name":"Briwate",
+      "title":"Briwate",
       "price":6.99,
       "menuCategory":"dessert",
       "ordersCount":100,
@@ -25,7 +25,7 @@
       ]
    },
    {
-      "name":"Saykouk",
+      "title":"Saykouk",
       "price":5.99,
       "menuCategory":"dessert",
       "ordersCount":25,
@@ -37,7 +37,7 @@
       ]
    },
    {
-      "name":"Kaab El Ghazal",
+      "title":"Kaab El Ghazal",
       "price":3.99,
       "menuCategory":"dessert",
       "ordersCount":167,
@@ -49,7 +49,7 @@
       ]
    },
    {
-      "name":"Espresso",
+      "title":"Espresso",
       "price":2.99,
       "menuCategory":"drink",
       "ordersCount":205,
@@ -60,7 +60,7 @@
       ]
    },
    {
-      "name":"Latte",
+      "title":"Latte",
       "price":4.99,
       "menuCategory":"drink",
       "ordersCount":78,
@@ -71,7 +71,7 @@
       ]
    },
    {
-      "name":"Mint Tea",
+      "title":"Mint Tea",
       "price":4.99,
       "menuCategory":"drink",
       "ordersCount":465,
@@ -84,7 +84,7 @@
       ]
    },
    {
-      "name":"Mojito",
+      "title":"Mojito",
       "price":7.99,
       "menuCategory":"drink",
       "ordersCount":20,
@@ -97,7 +97,7 @@
       ]
    },
    {
-      "name":"Orange Juice",
+      "title":"Orange Juice",
       "price":3.99,
       "menuCategory":"drink",
       "ordersCount":120,
@@ -109,7 +109,7 @@
       ]
    },
    {
-      "name":"Smoothie",
+      "title":"Smoothie",
       "price":4.99,
       "menuCategory":"drink",
       "ordersCount":45,
@@ -121,7 +121,7 @@
       ]
    },
    {
-      "name":"Soda can",
+      "title":"Soda can",
       "price":2.99,
       "menuCategory":"drink",
       "ordersCount":37,
@@ -132,7 +132,7 @@
       ]
    },
    {
-      "name":"Hot Chocolate",
+      "title":"Hot Chocolate",
       "price":6.99,
       "menuCategory":"drink",
       "ordersCount":12,
@@ -143,7 +143,7 @@
       ]
    },
    {
-      "name":"Daghmira Chicken",
+      "title":"Daghmira Chicken",
       "price":17.99,
       "menuCategory":"food",
       "ordersCount":49,
@@ -156,7 +156,7 @@
       ]
    },
    {
-      "name":"Chicken Pastilla",
+      "title":"Chicken Pastilla",
       "price":21.99,
       "menuCategory":"food",
       "ordersCount":29,
@@ -169,7 +169,7 @@
       ]
    },
    {
-      "name":"Eggs Tomato Tagine",
+      "title":"Eggs Tomato Tagine",
       "price":12.99,
       "menuCategory":"food",
       "ordersCount":229,
@@ -180,7 +180,7 @@
       ]
    },
    {
-      "name":"Fish Pastilla",
+      "title":"Fish Pastilla",
       "price":25.99,
       "menuCategory":"food",
       "ordersCount":50,
@@ -193,7 +193,7 @@
       ]
    },
    {
-      "name":"Fish Tagine",
+      "title":"Fish Tagine",
       "price":14.99,
       "menuCategory":"food",
       "ordersCount":32,
@@ -206,7 +206,7 @@
       ]
    },
    {
-      "name":"Harira",
+      "title":"Harira",
       "price":6.99,
       "menuCategory":"food",
       "ordersCount":362,
@@ -218,7 +218,7 @@
       ]
    },
    {
-      "name":"Lamb",
+      "title":"Lamb",
       "price":26.99,
       "menuCategory":"food",
       "ordersCount":34,
@@ -228,7 +228,7 @@
       ]
    },
    {
-      "name":"Seffa",
+      "title":"Seffa",
       "price":12.99,
       "menuCategory":"food",
       "ordersCount":45,
@@ -240,7 +240,7 @@
       ]
    },
    {
-      "name":"tanjia",
+      "title":"tanjia",
       "price":18.99,
       "menuCategory":"food",
       "ordersCount":23,
@@ -252,7 +252,7 @@
       ]
    },
    {
-      "name":"zaalok",
+      "title":"zaalok",
       "price":6.99,
       "menuCategory":"food",
       "ordersCount":123,
@@ -263,7 +263,7 @@
       ]
    },
    {
-      "name":"Prunes Tagine",
+      "title":"Prunes Tagine",
       "price":18.99,
       "menuCategory":"food",
       "ordersCount":99,
@@ -275,7 +275,7 @@
       ]
    },
    {
-      "name":"Couscous",
+      "title":"Couscous",
       "price":19.99,
       "menuCategory":"food",
       "ordersCount":99,
